@@ -1,14 +1,5 @@
-# mongoose-schema-json-parse
-mongoose schema serialize
-
-### Install
-```
-npm install mongoose-schema-json-parse
-```
-### Use
-```
 const mongoose = require('mongoose');
-const {json2schema, schema2json} = require('mongoose-schema-json-parse');
+const {json2schema, schema2json} = require('./index');
 
 const AccountSchema = new mongoose.Schema({
     uid: {
@@ -33,12 +24,10 @@ const AccountSchema = new mongoose.Schema({
 AccountSchema.index({'others.score': 1}, {unique: true, sparse: true});
 AccountSchema.index({'others.level': 1}, {unique: true, sparse: true});
 
+
 let json1 = schema2json(AccountSchema)
 console.log(json1)
-
 let schema = json2schema(json1)
-
 let json2 = schema2json(schema)
 console.log(json2)
-
-```
+console.log(json1 === json2)

@@ -1,0 +1,28 @@
+{
+    "name": "mongoose-schema-json-parse",
+    "version": "1.0.0",
+    "description": "mongoose schema serialize",
+    "keywords": [
+        "mongoose",
+        "schema",
+        "json",
+        "serialize"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lyrstar/mongoose-schema-json-parse.git"
+    },
+    "author": "lyrstar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lyrstar/mongoose-schema-json-parse/issues"
+    },
+    "homepage": "https://github.com/lyrstar/mongoose-schema-json-parse#readme",
+    "dependencies": {
+        "mongoose": "*"
+    }
+}
